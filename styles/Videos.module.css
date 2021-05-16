@@ -1,0 +1,85 @@
+.listItemWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    flex-basis: 80%;
+    border-bottom: 1px solid #e8e8e8;
+    align-items: center;
+}
+
+.listItem:first-child {
+    padding-top: 0;
+}
+
+.listItem:last-child{
+    padding-bottom: 0;
+}
+
+.title {
+    color: #4c4c51;
+}
+
+.description a {
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.imageWrapper {
+    display: inline-block;
+    position: relative;  
+}
+
+.imageWrapper:hover{
+    cursor: pointer;
+}
+
+.imageWrapper::after {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 96px;
+    height: 96px;
+    background: url('../public/assets/playbtn.png');
+    background-size: cover;
+    content: '';
+}
+
+
+@media (max-width: 600px) {
+
+    .listItemWrapper {
+        padding: 0 10px;
+    }
+
+    .listItem {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+
+    .listInfo {
+        display: flex;
+        flex-basis: 100%;
+    }
+
+    .title{
+        font-size: 20px;
+        margin: 0px auto 10px;
+    }
+  
+    .description {
+     display: none;
+    }
+
+    .imageWrapper{
+        margin: 0 auto;
+    }
+    
+}
+

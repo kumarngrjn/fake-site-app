@@ -1,9 +1,20 @@
+@font-face {
+  font-family: SourceSansPro;
+  src: url(../public/fonts/SourceSansPro-Light.otf);
+}
+
+@font-face {
+  font-family: SourceSansProBold;
+  src: url(/public/fonts/SourceSansPro-Bold.otf);
+  font-weight: bold;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: SourceSansPro;
+  font-weight: normal;
 }
 
 a {
@@ -14,3 +25,106 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+header{
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #4c4c51;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #fff;
+}
+
+p{
+ font-weight: normal;
+ font-size: 22px;
+ line-height: 28px;
+ color: #4c4c51;
+ margin-bottom: 0;
+}
+
+a,
+a:active,
+a:focus,
+a:visited{
+  font-size: 22px;
+  line-height: 28px;
+  color: #88939e;
+}
+
+a:hover{
+  color: #4c4c51;
+}
+
+a.white {
+  color: #fff;
+}
+
+button {
+  background-color: #EE2D1C;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+  min-height: 55px;
+  border-radius: 22px;
+  border: 1px solid #EE2D1C;
+  padding: 0 10px;
+}
+
+li {
+  list-style: none;
+}
+
+ul > ul {
+  padding: 0;
+}
+
+footer a,
+footer a:hover,
+footer a:active,
+footer a:visited {
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+
+@media (max-width: 600px) {
+  
+  header {
+    height: 300px;
+  }
+
+  h3{
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  button {
+    font-size: 18px;
+    border-radius: 18px;
+  }
+  
+}
+
