@@ -14,8 +14,9 @@ function Videos({videosLists}){
 
 
 function Video(props){
-    const {title, description, thumbnail_medium, thumbnail_small, url } = props
+    const {title, description, thumbnail_medium, url } = props
     const truncated = description.length > 200 ;
+    const imageSrc = thumbnail_medium ? thumbnail_medium : '/assets/stockimage.png'
     const descriptiontruncated = description.length > 200 ? description.substring(0, 200)+'...' : description
     return(
         <li className={styles.listItem}>
@@ -26,7 +27,7 @@ function Video(props){
                     {truncated && <Link href={'#'}>Read More...</Link>}
                 </div>
             </div>
-            <div className={styles.imageWrapper}><a target='_blank' href={url}><img src={thumbnail_medium} width={200} height={150} /></a></div>
+            <div className={styles.imageWrapper}><a target='_blank' href={url}><img src={imageSrc} width={200} height={150} /></a></div>
         </li>
     )
 }

@@ -42,13 +42,16 @@
 
 .imageWrapper::after {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 48%; 
+    left: 50%;
     transform: translate(-50%,-50%);
-    width: 96px;
-    height: 96px;
-    background: url('../public/assets/playbtn.png');
-    background-size: cover;
+    width: 200px;
+    height: 150px;
+    background: no-repeat url('../public/assets/playbtn.png') center center,
+    linear-gradient(top, #ee2e1d, #ffb1b5);
+    background-size: 25% auto;
     content: '';
+    opacity: 0.75;
 }
 
 

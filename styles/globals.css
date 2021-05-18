@@ -105,6 +105,10 @@ footer a:visited {
   line-height: 1.5rem;
 }
 
+.content {
+  padding: 10px 20px;
+}
+
 
 @media (max-width: 600px) {
   
